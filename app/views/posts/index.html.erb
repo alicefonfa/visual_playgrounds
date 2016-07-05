@@ -1,0 +1,8 @@
+<h1>Visual Playgrounds</h1>
+
+<% @posts.each do |post| %>
+    <ul>
+      <td><%= post.text %></td>
+      <td><%= link_to 'Show', post_path(post) %></td>
+    </ul>
+  <% end %>
