@@ -1,9 +1,0 @@
-<div class="inline">
-    
-    <h4>Email: <%= @user.email%></h4>
-    <p>Member since: <%= @user.created_at.strftime('%m/%d/%y') %></p>
-    <div>
-      <%= link_to "Edit Profile", "/users/#{@user.id}/edit", class: 'btn btn-primary btn-welcome reminder_settings'%>
-   
-
-   
