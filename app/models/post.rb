@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
+	require_relative '../uploaders/image_uploader.rb'
+	
 	belongs_to :user
 	mount_uploader :image, ImageUploader
 	validates_processing_of :image
